@@ -8,7 +8,7 @@ names = input("Enter everybody's name separated by comma: \n")
 list_of_names = names.split(",")
 
 # First method
-#chosen_person = random.choice(list_of_names)
+#person_selected = random.choice(list_of_names)
 #print(f"{chosen_person} will pay for everybody's food bill")
 
 # Second method 
