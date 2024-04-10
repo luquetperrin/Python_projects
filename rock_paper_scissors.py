@@ -1,3 +1,14 @@
+# Rock Paper Scissors project
+
+# Rules of the game
+    # Rock wins against Scissors
+    # Scissors win against Paper
+    # Paper wins aginst Rock
+    # 0 for Rock
+    # 1 for Paper
+    # 2 for Scissors
+
+
 import random
 
 user_choice = int(input("Enter your choice: Type 0 for Rock, 1 for Paper, 2 for Scissors.\n"))
