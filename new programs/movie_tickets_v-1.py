@@ -15,7 +15,7 @@ while True:
         except ValueError:
             print("Invalid input. Please enter a number or 'q' to quit.")
             continue
-        
+
         # If a valid age is provided, break out of the inner loop
         break
         
@@ -35,3 +35,4 @@ while True:
         print("You are too young to buy a ticket")
     else:
         print(f"Your ticket price is ${price}.")
+        
