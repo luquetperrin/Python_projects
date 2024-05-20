@@ -6,7 +6,7 @@ finished_sandwiches = []
 
 # Loop through sandwich orders until the list is empty
 while sandwich_orders:
-    current_order = sandwich_orders.pop()
+    current_order = sandwich_orders.pop(0)
     print(f"I made your {current_order} sandwich")
 
     # Add the completed sandwich to the finished sandwiches list
