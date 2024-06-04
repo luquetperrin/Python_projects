@@ -1,0 +1,37 @@
+import sys
+
+
+def calculate_and_print_results(number1, number2):
+    """Calculates and prints the sum, difference, product, and quotient of two numbers.
+
+    
+    Args:
+        number1(float): The first number.
+        number2(float): The second number.
+    """
+    sum_numbers = number1 + number2
+    difference = number1 -  number2
+    product = number1 * number2
+
+    try:
+        quotient = number1 / number2
+    except ZeroDivisionError:
+        quotient = None
+
+    print(f"The sum is: {sum_numbers:.2f}")
+    print(f"The difference is: {difference:.2f}")
+    print(f"The product is: {product:.2f}")
+    if quotient is not None:
+        print(f"The quotient is: {quotient:.2f}")
+    else:
+        print("Error: Division by zero is not allowed.")
+
+if len(sys.argv) == 3:
+    try:
+        number1 = float(sys.argv[1])
+        number2 = float(sys.argv[2])
+        calculate_and_print_results(number1, number2)
+    except ValueError:
+        print("Error: Please provide valid numbers as arguments.")
+else:
+    print("Usage: script_name.py number1 number2")
